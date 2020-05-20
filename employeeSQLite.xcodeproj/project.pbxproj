@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		5C119B162475B21C00B816FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C119B152475B21C00B816FB /* AppDelegate.swift */; };
-		5C119B182475B21C00B816FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C119B172475B21C00B816FB /* ViewController.swift */; };
+		5C119B182475B21C00B816FB /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C119B172475B21C00B816FB /* AddEmployeeViewController.swift */; };
 		5C119B1B2475B21C00B816FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C119B192475B21C00B816FB /* Main.storyboard */; };
 		5C119B1D2475B21C00B816FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C119B1C2475B21C00B816FB /* Assets.xcassets */; };
 		5C119B202475B21C00B816FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C119B1E2475B21C00B816FB /* LaunchScreen.storyboard */; };
+		5C119B2A2475B4DD00B816FB /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C119B292475B4DD00B816FB /* EmployeeListViewController.swift */; };
+		5C119B2C2475B4ED00B816FB /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C119B2B2475B4ED00B816FB /* Employee.swift */; };
+		5C119B302475B5B000B816FB /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C119B2F2475B5B000B816FB /* DAO.swift */; };
+		5C119B322475B64D00B816FB /* EmployeeDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C119B312475B64D00B816FB /* EmployeeDisplayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C119B122475B21C00B816FB /* employeeSQLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = employeeSQLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C119B152475B21C00B816FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C119B172475B21C00B816FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C119B172475B21C00B816FB /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
 		5C119B1A2475B21C00B816FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C119B1C2475B21C00B816FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C119B1F2475B21C00B816FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C119B212475B21C00B816FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C119B292475B4DD00B816FB /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
+		5C119B2B2475B4ED00B816FB /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		5C119B2F2475B5B000B816FB /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		5C119B312475B64D00B816FB /* EmployeeDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDisplayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		5C119B142475B21C00B816FB /* employeeSQLite */ = {
 			isa = PBXGroup;
 			children = (
+				5C119B2E2475B5A200B816FB /* DOA */,
+				5C119B2D2475B57100B816FB /* General Objects */,
+				5C119B282475B49A00B816FB /* VCO */,
+				5C119B272475B46B00B816FB /* BLO */,
 				5C119B152475B21C00B816FB /* AppDelegate.swift */,
-				5C119B172475B21C00B816FB /* ViewController.swift */,
 				5C119B192475B21C00B816FB /* Main.storyboard */,
 				5C119B1C2475B21C00B816FB /* Assets.xcassets */,
 				5C119B1E2475B21C00B816FB /* LaunchScreen.storyboard */,
 				5C119B212475B21C00B816FB /* Info.plist */,
 			);
 			path = employeeSQLite;
+			sourceTree = "<group>";
+		};
+		5C119B272475B46B00B816FB /* BLO */ = {
+			isa = PBXGroup;
+			children = (
+				5C119B2B2475B4ED00B816FB /* Employee.swift */,
+			);
+			path = BLO;
+			sourceTree = "<group>";
+		};
+		5C119B282475B49A00B816FB /* VCO */ = {
+			isa = PBXGroup;
+			children = (
+				5C119B172475B21C00B816FB /* AddEmployeeViewController.swift */,
+				5C119B292475B4DD00B816FB /* EmployeeListViewController.swift */,
+				5C119B312475B64D00B816FB /* EmployeeDisplayViewController.swift */,
+			);
+			path = VCO;
+			sourceTree = "<group>";
+		};
+		5C119B2D2475B57100B816FB /* General Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "General Objects";
+			sourceTree = "<group>";
+		};
+		5C119B2E2475B5A200B816FB /* DOA */ = {
+			isa = PBXGroup;
+			children = (
+				5C119B2F2475B5B000B816FB /* DAO.swift */,
+			);
+			path = DOA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C119B182475B21C00B816FB /* ViewController.swift in Sources */,
+				5C119B182475B21C00B816FB /* AddEmployeeViewController.swift in Sources */,
+				5C119B2C2475B4ED00B816FB /* Employee.swift in Sources */,
 				5C119B162475B21C00B816FB /* AppDelegate.swift in Sources */,
+				5C119B2A2475B4DD00B816FB /* EmployeeListViewController.swift in Sources */,
+				5C119B302475B5B000B816FB /* DAO.swift in Sources */,
+				5C119B322475B64D00B816FB /* EmployeeDisplayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
